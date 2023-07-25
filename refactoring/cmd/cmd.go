@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 
-	"example.com/refactoring/src/pkg/function"
+	"example.com/refactoring/pkg/function"
+	"example.com/refactoring/pkg/object"
 )
 
 func main() {
@@ -19,4 +20,17 @@ func main() {
 	function.TestRemoveAssignmentsToParam()
 	fmt.Println("#####Replace Method With Method Obj#####")
 	function.TestReplaceMethodWithMethodObj()
+
+	fmt.Println("#####Extract Class#####")
+	object.TestExtractClass()
+	fmt.Println("#####Move Field#####")
+	object.TestMoveField()
+	fmt.Println("#####Move Method#####")
+	object.TestMoveMethod()
+	fmt.Println("#####Hide Delegate#####")
+	object.TestHideDelegate()
+	fmt.Println("#####Remove Middle Man#####")
+	object.TestRemoveMiddleMan()
+	fmt.Println("#####Local Extension#####")
+	object.TestLocalExtension()
 }
