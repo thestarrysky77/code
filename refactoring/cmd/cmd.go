@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"example.com/refactoring/pkg/expressions"
 	"example.com/refactoring/pkg/function"
 	"example.com/refactoring/pkg/object"
 )
@@ -33,4 +34,15 @@ func main() {
 	object.TestRemoveMiddleMan()
 	fmt.Println("#####Local Extension#####")
 	object.TestLocalExtension()
+
+	fmt.Println("###Consolidate Conditional Expression###")
+	expressions.TestConsolidateConditionalExpression()
+	fmt.Println("###Consolidate Duplicate Conditional Fragments###")
+	expressions.TestConsolidateDuplicateConditionalFragments()
+	fmt.Println("###Introduce Null Object###")
+	expressions.TestIntroduceNullObject()
+	fmt.Println("###Remove Control Flag###")
+	expressions.TestRemoveControlFlag()
+	fmt.Println("###Replace Conditional With Polymorphism###")
+	expressions.TestReplaceConditionalWithPolymorphism()
 }
