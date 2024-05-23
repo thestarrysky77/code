@@ -4,7 +4,6 @@ import (
 	"example.com/quickgo/pkg/channels"
 	"example.com/quickgo/pkg/defaults"
 	"example.com/quickgo/pkg/json"
-	"example.com/quickgo/pkg/mutexs"
 )
 
 func main() {
@@ -15,8 +14,8 @@ func main() {
 	json.TestAll()
 
 	// channels
-	channels.TestChan()
+	channels.TestAll()
 
 	// mutexs
-	mutexs.TestMutexCondition()
+	//mutexs.TestMutexCondition()
 }
